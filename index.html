@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Trading Chart App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightweight Charts Library -->
+     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+
+    <!-- <div class="logo">
+        <div class="logo-circle"></div>
+        <h2>Metal Stocks</h2>
+    </div> -->
+
+                <div class="logo-container">
+                    <div class='logo'>
+                      <img class='logo-circle' src="logo.png" />
+                    </div>
+                    <div>
+                      <h2>Metal Stock</h2>
+                    </div>
+                </div>
+
+    <nav class="nav">
+        <a href="index.html">Gold</a>
+        <a href="silver.html">Silver</a>
+        <a href="platinum.html">Platinum</a>
+        <a href="#">More</a>
+    </nav>
+
+    <div class="right-section">
+
+        <input type="text" placeholder="Search metals..." class="search">
+
+        <button class="login-btn">Login / Sign up</button>
+        <!-- <input type="text" id="username" placeholder="Username">
+        <input type="password" id="passwoord" placeholder="Enter Password">
+        <p id="message"></p> -->
+
+    </div>
+
+</header>
+
+    <div class="container">
+        <h2>Gold Passive FoF Direct Growth</h2>
+        <h2 class="return">+44.79% <span>3Y annualised</span></h2>
+
+        <div id="goldchart"></div>
+
+        <div class="buttons">
+            <button>1M</button>
+            <button>6M</button>
+            <button>1Y</button>
+            <button>3Y</button>
+            <button>ALL</button>
+        </div>
+
+        <div class="info">
+
+        <div>
+            <p>NAV</p>
+            <h3 id="nav">₹33.48</h3>
+        </div>
+
+        <div>
+            <p>Min for SIP</p>
+            <h3>₹500</h3>
+        </div>
+
+        <div>
+            <p>Fund size</p>
+            <h3>₹2,977 Cr</h3>
+        </div>
+
+        <div>
+            <p>Expense ratio</p>
+            <h3>0.13%</h3>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
